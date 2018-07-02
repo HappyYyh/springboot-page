@@ -70,7 +70,7 @@ function show_pageNav(result) {
         });
     }
     var nextPageLi  = $("<li></li>").append($("<a></a>").attr("href","#").append("&raquo;"));
-    var lastPageLi  = $("<li></li>").append($("<a></a>").attr("href","#").append("首页"));
+    var lastPageLi  = $("<li></li>").append($("<a></a>").attr("href","#").append("末页"));
     //如果已经是末页了，那么让其不可选中
     if(result.hasNextPage == false){
         nextPageLi.addClass("disabled");
